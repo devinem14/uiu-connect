@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+{% block title %}
+Add New Session
+{% endblock %}
+ 
+{% block content %}
+	<h3>Add a New Session</h3>
+	<br>
+	<form method="post" action="/create/" class="form-group">
+		{% csrf_token %}
+		{{form.as_p}}
+	  	<button name="save" type="submit" class="btn btn-success">Create</button>
+	</form>
+{% endblock %}
