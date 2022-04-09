@@ -1,5 +1,6 @@
 {% extends "main/base.html" %}
-{% block title %}View List{% endblock %}
+{% block title %}Session{% endblock %}
+{% load crispy_forms_tags %}
  
 {% block content %}
     <h1>Session {{ls.name}}</h1>
@@ -21,4 +22,43 @@
 
         <button type="submit", name="save", value="save">Save</button>
     </form>
+    <br></br>
+    <div style="height:560px;width:auto;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+        <button class="accordion">Session 4 (03/14/2022-05/05/2022)</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        <button class="accordion">Session 5 (05/16/2022-07/07/2022)</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        <button class="accordion">Session 6 (07/11/2022-08/18/2022)</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        <button class="accordion">Session 1 (08/29/2022-10/20/2022)</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        <button class="accordion">Session 2 (10/24/2022-12/15/2022)</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        <button class="accordion">Session 3 (01/09/2023-03/02/2023)</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        <button class="accordion">Session 4 (03/13/2023-05/04/2023)</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        <button class="accordion">Session 5 (05/15/2023-07/06/2023)</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        <button class="accordion">Session 6 (07/10/2023-08/17/2023)</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+    </div>
 {% endblock %}
