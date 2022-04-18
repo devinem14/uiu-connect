@@ -5,7 +5,11 @@ View
 {% endblock %}
 
 {% block content %}
-    {% for td in user.todolist.all %}
-	<p><a href="/{{td.id}}">Session {{td.name}}</a></p>
-    {% endfor %}
+    {% if user.is_authenticated %}
+        {% for td in user.todolist.all %}
+        <p><a href="/{{td.id}}">Session {{td.name}}</a></p>
+        {% endfor %}
+    {% else %}
+    <p>Please Login to View This Page</p>
+    {% endif %}
 {% endblock %}
